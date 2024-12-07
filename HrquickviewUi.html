@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR QuickView</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .title-bar {
+            background-color: #007bff;
+            color: white;
+            padding: 23px;
+            text-align: center;
+        }
+        .main-container {
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .main-logcontainer {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Title Bar -->
+<div class="title-bar">
+    <h1>HR QuickView</h1>
+</div>
+
+<!-- Main Content -->
+<div class="main-container container">
+    <h2 class="text-center">Welcome to HR QuickView</h2>
+    <p class="text-center">HR QuickView is a dashboard that centralizes employee data, offering insights into workforce trends. It helps HR professionals make informed decisions, manage information efficiently, and streamline HR processes.</p>
+
+    <!-- Login Container -->
+    <div class="main-logcontainer card">
+        <h2 class="text-center">Login</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+    </div>
+
+    <!-- HR Dashboard Sections -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vacation Tracking</h5>
+                    <p class="card-text mt-3">Manage employee leave and vacation requests seamlessly. Easily track and approve leave applications with a user-friendly interface. Monitor trends and generate monthly leave reports for better workforce planning.</p>
+                    <a href="vacation.html" class="btn btn-primary">View Vacation Tracking</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Absenteeism Report</h5>
+                    <p class="card-text mt-3">Analyze absenteeism patterns and generate detailed reports to improve workforce efficiency and attendance policies. Gain insights into absentee trends and identify potential areas of improvement.</p>
+                    <a href="absenteeism.html" class="btn btn-primary">View Absenteeism Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Employee Analytics</h5>
+                    <p class="card-text mt-3">Get insights into workforce performance and trends with advanced analytics and customizable dashboards. Use data-driven decisions to boost productivity and enhance employee satisfaction.</p>
+                    <a href="analytics.html" class="btn btn-primary">View Employee Analytics</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Holiday Management</h5>
+                    <p class="card-text mt-3">Plan and manage company holidays efficiently with shared calendars and automated reminders. Ensure transparency and improved scheduling for all employees.</p>
+                    <a href="holidays.html" class="btn btn-primary">View Holiday Management</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Time Off Policy</h5>
+                    <p class="card-text mt-3">Define and customize company time-off policies to fit organizational needs and enhance compliance. Ensure employees are well-informed about their leave entitlements.</p>
+                    <a href="timeoff.html" class="btn btn-primary">View Time Off Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 HR QuickView. All Rights Reserved.</p>
+    <p>Centralizing employee data for better decision-making and efficiency.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
